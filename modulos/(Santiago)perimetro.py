@@ -38,3 +38,16 @@ def perimetroRectangulo():
     perimetro = 2(lado) + 2(lado2)
     print(f"el perimetro de el rectangulo es {perimetro}")
     return
+
+def elegirFigura():
+    """elije una figura
+cuadrado
+triangulo
+circulo
+rectangulo
+salir
+"""
+opcion = input(" ")
+
+if opcion <1 or opcion >5:
+    print("opcion invalida intenta denuevo")
