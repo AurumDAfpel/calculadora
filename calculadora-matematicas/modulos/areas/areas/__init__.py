@@ -1,6 +1,6 @@
 from areas import area_cuadrado, area_triangulo, area_circulo, area_rectangulo
 
-def menu():
+def menu_areas():
     while True:
         print("\n MENÚ DE CÁLCULO DE ÁREAS ")
         print("1. Cuadrado")
@@ -24,4 +24,4 @@ def menu():
             print("Opción no válida. Intente nuevamente.")
 
 if __name__ == "__main__":
-    menu()
+    menu_areas()
