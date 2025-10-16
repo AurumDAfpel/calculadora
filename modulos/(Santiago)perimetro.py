@@ -45,14 +45,24 @@ def perimetroRectangulo():
 
 def elegirFigura():
     """elije una figura
-cuadrado
-triangulo
-circulo
-rectangulo
-salir
+1. cuadrado
+2. triangulo
+3. circulo
+4. rectangulo
+5. salir
 """
-opcion = input(" ")
+    opcion = input(" ")
 
-if opcion <1 or opcion >5:
-    print("opcion invalida intenta denuevo")
+    if opcion <1 or opcion >5:
+        print("opcion invalida intenta denuevo")
+    if opcion == 1:
+        perimetroCuadrado()
+    elif opcion == 2:
+        perimetroTriangulo()
+    elif opcion == 3:
+        perimetroCirculo()
+    elif opcion == 4:
+        perimetroRectangulo()
+    else:
+        return
 
