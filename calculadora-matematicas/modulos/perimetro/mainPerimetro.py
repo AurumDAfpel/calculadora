@@ -1,7 +1,7 @@
-from perimetro.cuadrado import perimetroCuadrado
-from perimetro.circulo import perimetroCirculo
-from perimetro.rectangulo import perimetroRectangulo
-from perimetro.triangulo import perimetroTriangulo
+from modulos.perimetro.cuadrado import perimetroCuadrado
+from modulos.perimetro.circulo import perimetroCirculo
+from modulos.perimetro.rectangulo import perimetroRectangulo
+from modulos.perimetro.triangulo import perimetroTriangulo
 
 def elegirFigura():
     """bienvenido al menu de perimetros
