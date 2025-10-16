@@ -1,4 +1,4 @@
-from areas import area_cuadrado, area_triangulo, area_circulo, area_rectangulo
+from areas import area_cuadrado, area_triangulo
 
 def menu():
     while True:
