@@ -2,6 +2,7 @@ from modulos.areas.cuadrado import area_cuadrado
 from modulos.areas.triangulo import area_triangulo
 from modulos.areas.circulo import area_circulo
 from modulos.areas.rectangulo import area_rectangulo
+from modulos.utils import clear_console, pause 
 
 def menuAreas():
     while True:
@@ -16,12 +17,23 @@ def menuAreas():
 
         if opcion == "1":
             area_cuadrado()
+            pause()
+            clear_console()
         elif opcion == "2":
             area_triangulo()
+            pause()
+            clear_console()
         elif opcion == "3":
             area_circulo()
+            pause()
+            clear_console()
         elif opcion == "4":
             area_rectangulo()
+            pause()
+            clear_console()
+        elif opcion == "5":
             break
         else:
             print("Opción no válida. Intente nuevamente.")
+            pause()
+            clear_console()
