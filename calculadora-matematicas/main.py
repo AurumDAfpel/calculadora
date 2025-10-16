@@ -1,4 +1,5 @@
 from modulos.perimetro import mainPerimetro
+from modulos.areas.mainAreas import menuAreas
 
 def mostrar_menu_principal():
     print("\n===== CALCULADORA MATEMÁTICA =====")
@@ -12,7 +13,7 @@ def main():
     while True:
         opcion = mostrar_menu_principal()
         if opcion == "1":
-            print("Módulo de áreas aún no implementado")
+                menuAreas()
         elif opcion == "2":
                 mainPerimetro()
         elif opcion == "3":
