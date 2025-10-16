@@ -2,27 +2,36 @@ from modulos.perimetro.cuadrado import perimetroCuadrado
 from modulos.perimetro.circulo import perimetroCirculo
 from modulos.perimetro.rectangulo import perimetroRectangulo
 from modulos.perimetro.triangulo import perimetroTriangulo
+from modulos.utils import clear_console, pause  
 
 def elegirFigura():
-    """bienvenido al menu de perimetros
-elije una figura:
-1. cuadrado
-2. triangulo
-3. circulo
-4. rectangulo
-0. salir
-"""
+    print("bienvenido al menu de perimetros")
+    print("elije una figura:")
+    print("1. Cuadrado")
+    print("2. Triangulo")  
+    print("3. Circulo")
+    print("4. Rectangulo")
+    print("5. Salir")
+
     opcion = input(" ")
 
-    if opcion <0 or opcion >4:
+    if opcion <"0" or opcion >"4":
         print("opcion invalida intenta denuevo")
-    if opcion == 1:
+    if opcion == "1":
         perimetroCuadrado()
-    elif opcion == 2:
+        pause()
+        clear_console()
+    elif opcion == "2":
         perimetroTriangulo()
-    elif opcion == 3:
+        pause()
+        clear_console()
+    elif opcion == "3":
         perimetroCirculo()
-    elif opcion == 4:
+        pause()
+        clear_console()
+    elif opcion == "4":
         perimetroRectangulo()
+        pause()
+        clear_console()
     else:
         return
