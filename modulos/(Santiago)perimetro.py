@@ -7,10 +7,14 @@ def menuPerimetros():
 1. elije la figura que le quieras sacar perimetro
 2. salir """
 
-opcion = input(" ")
+    opcion = input(" ")
  
-if opcion <1 or opcion >2:
-    print("opcion invalida intenta denuevo")
+    if opcion <1 or opcion >2:
+        print("opcion invalida intenta denuevo")
+    elif opcion == 1:
+        elegirFigura()
+    elif opcion == 2:
+        return
 
 def perimetroCuadrado():
     lado = float(input("ingresa el lado de tu cuadrado: "))
@@ -51,3 +55,4 @@ opcion = input(" ")
 
 if opcion <1 or opcion >5:
     print("opcion invalida intenta denuevo")
+
